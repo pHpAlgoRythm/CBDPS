@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+
+
+
+nav{
+    height: 1px;
+    padding:50px ;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(10, 10, 37);
+}
+
+.logo{
+    color: white;
+    font-size: 51px;
+    font-family: "Brush Script MT", sans-serif;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.auth form{
+    display: flex;
+    flex-direction: column;
+   outline: 1px solid grey;
+   gap: 20px;
+    width: 900px;
+    background: whitesmoke;
+    border-top: 3px solid blue;
+    padding-left: 20px;
+}
+
+.registrationTitle{
+    text-align: center;
+}
+
+
+.credential, .basicInfo, .address{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.credential input, .basicInfo input, .address input{
+    width: 200px;
+    height: 24px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.address select{
+    width: 200px;
+    height: 22px;
+    font-size: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.registerBtn{
+    width: 200px;
+    height: 50px;
+    align-self: self-end;
+    margin-right: 30px;
+    transform: translateY(-30px);
+    border-radius: 10px ;
+    outline: none;
+    background: rgb(10, 10, 37);
+    color: white;
+    font-size: 20px;
+}
+
+.gender{
+    width: 210px;
+}

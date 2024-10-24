@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+nav{
+    margin: 0;
+    height: 1px;
+    padding:50px ;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(10, 10, 37);
+
+
+}
+
+.logo{
+    color: white;
+    font-size: 51px;
+    font-family: "Brush Script MT", sans-serif;
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 20px;
+    font-size: 30px;
+
+}
+
+.navigation i{
+    cursor: pointer;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.brgyLogo{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.brgyLogo img{
+    width: 290;
+    height: 190px;
+  
+}
+
+.requestDocs{
+    width: 100%;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.requestDocs h1{
+    font-size: 40px;
+    margin-top: 20px;
+    transform: translateX(-500px);
+}
+
+.docs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.papers{
+    width: 500px;
+    height: 300px;
+    background: rgb(4, 9, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.content h3{
+    transform: translate(-20px, -20px);
+}
+
+.content p{
+    text-align: start;
+}
+
+
+
+.docImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.docImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.papers i{
+    font-size: 20px;
+    transform: translateY(100px);
+    cursor: pointer;
+}
+
+.reportIssue{
+    width: 100%;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.issueContainer{
+    width: 1200PX;
+    height: 450px;
+    background: rgb(10, 10, 37);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.issueContainer h2{
+    font-size: 26px;
+}
+
+.issueContainer p{
+    font-size: 20px;
+}
+
+.reportForm{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.division1{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.category h3{
+    font-size: 24px;
+}
+
+.category ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+.category ul li input{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.reportDescription{
+    width: 100%;
+    height: 200px;
+}
+
+.reportDescription textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.reportDescription textarea:focus{
+    outline: none;
+}
+
+.char-count {
+    font-size: 14px;
+    color: #555;
+}
+
+.division2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.division2 select{
+    height: 30px;
+}
+
+.submitReport{
+    width: 300px;
+    height: 100px;
+    transform: translate(800px, -100px);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hiddenDiv{
+    display: none;
+}
+
+.notification{
+    width: 400px;
+    height: 580px;
+    display: none;
+    position: absolute; 
+    top: 60px; 
+    right: 50px; 
+    background-color: #100647;
+    box-shadow: 0 4px 8px rgba(10, 3, 53, 0.1);
+    z-index: 100;
+    color: rgb(247, 243, 243);
+    
+}
+
+.notifContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+}
+
+
+
+.profileMenu {
+
+    width: 400px;
+    height: 400px;
+    display: none;
+    align-items: center;
+    position: absolute; 
+    top: 60px; 
+    right: 50px; 
+    background-color: #100647;
+    box-shadow: 0 4px 8px rgba(10, 3, 53, 0.1);
+    z-index: 100;
+}
+
+.profileMenuContainer{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.profileMenuContainer:first-child{
+    transform: translateY(-40px)
+}
+
+
+
+
